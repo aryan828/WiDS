@@ -1,0 +1,473 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>WiDS Hubballi</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <style>
+    body {
+      font-family: "Helvetica", serif;
+      background-color: #f9f9f9;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .banner-img {
+      width: 30%;
+    }
+
+    #banner {
+      margin-top: 10px;
+      height: 250px;
+      width: available;
+      background: #00B140;
+      color: white;
+      font-size: xxx-large;
+      text-align: center;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+
+    .head-text {
+      max-width: 800px;
+    }
+
+    #intro-text {
+      font-family: "Helvetica", serif;
+      padding: 10px;
+      /*margin: 10px;*/
+      text-align: center;
+      font-weight: normal;
+    }
+
+    button {
+      background: none;
+      border-radius: 5px;
+      padding: 8px 30px;
+      border-width: 1px;
+      margin: 30px auto 0 auto;
+      display:block;
+      cursor: pointer;
+    }
+
+    .headings {
+      font-weight: bold;
+      font-size: xx-large;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .column {
+      margin: 10px;
+      width: 32%;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .container {
+      padding: 2px 16px;
+    }
+
+    .container1 {
+      padding: 2px 16px;
+      text-align: center;
+    }
+
+    .name {
+      float: left;
+      width: 24%;
+      padding: 5px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .name {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <style>
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-nr7j{background-color:#efefef;border-color:#f9f9f9;
+      text-align:left;vertical-align:top}
+    .tg .tg-ktu8{background-color:#f9f9f9;border-color:#f9f9f9;
+      font-size:22px;text-align:center;vertical-align:top}
+    .tg .tg-s24f{background-color:#f9f9f9;border-color:#f9f9f9;
+      font-size:22px;font-weight:bold;text-align:center;vertical-align:top}
+    .tg .tg-548t{background-color:#75787b;border-color:#f9f9f9;color:#f9f9f9;
+      text-align:left;vertical-align:top}
+    .tg .tg-cx2f{background-color:#f9f9f9;border-color:#f9f9f9;color:#333333;
+      text-align:left;vertical-align:top}
+    .tg .tg-gyuj{background-color:#00b106;border-color:#f9f9f9;color:#ffffff;
+      text-align:left;vertical-align:top}
+    .tg .tg-lsq3{background-color:#f9f9f9;border-color:#f9f9f9;
+      text-align:left;vertical-align:top}
+
+    .trow {
+      margin-left:5px;
+      margin-right:5px;
+      /*align-items: center;*/
+      /*justify-content: center;*/
+    }
+
+    .tcolumn {
+      float: left;
+      width: 49%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .trow::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      /*border: 1px solid #ddd;*/
+    }
+
+    @media screen and (max-width: 600px) {
+      .tcolumn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <div id="head" class="content">
+    <img src="img/wids-matrix-1line.png" class="banner-img" alt="WiDS">
+    <img src="img/klelogo.png" alt="KLE Technological University" style="float: right; width: 25%; padding-top: 10px; padding-right: 10px">
+  </div>
+  <div id="banner">
+    <span class="content head-text">Women in Data Science Datathon Workshop 2022</span>
+  </div>
+
+  <div class="content but"><button onclick="location.href='https://forms.gle/mRduNKJcVYPH55a2A'" type="button">Register</button></div>
+
+  <div class="content" id="intro-text">
+    <p>Women in Data Science (WiDS) is a global initiative led by Stanford University. WiDS Hubballi is hosting a datathon workshop to support the WiDS global datathon challenge on climate change. WiDS Datathon participants will analyze differences in building energy efficiency, creating models to predict building energy consumption. Participants will use a dataset consisting of variables that describe building characteristics and climate and weather variables for the regions in which the buildings are located.</p>
+    <p>In support of the global Datathon, WiDS Hubballi is hosting a datathon workshop to help the participants hone required data science skillsets and participate effectively. Kaggle grandmaster will be taking sessions in this workshop and provide customized guidance to participants to ace this datathon challenge successfully. The datathon workshop will cover the nuances of navigating Kaggle platform effectively, data processing, model development, testing and submitting the winning solution.</p>
+  </div>
+  <div class="content but"><button onclick="location.href='https://www.widsconference.org/'" type="button" style="margin-top: 0">About WiDS Global</button></div>
+
+  <div class="headings">Speakers</div>
+
+  <div class="content">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="img/1520363154001.jpeg" alt="Ms. Srujana Kaddevarmuth" style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Ms. Srujana Kaddevarmuth</b></h4>
+            <p>Senior Director, Walmart Global Technology</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/1605122404671.jpeg" alt="Ms. Usha Rengaraju" style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Ms. Usha Rengaraju</b></h4>
+            <p>Principal Data Scientist, MUST Research</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headings">Agenda</div>
+  <div class="content">
+  <div class="trow"><div class="tcolumn">
+  <table class="tg">
+    <colgroup>
+      <col style="width: 103px">
+      <col style="width: 368px">
+    </colgroup>
+    <thead>
+    <tr>
+      <th class="tg-s24f" colspan="2">Day 1</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="tg-ktu8" colspan="2">February 12, 2022</td>
+    </tr>
+    <tr>
+      <td class="tg-548t">Time (IST)</td>
+      <td class="tg-548t">Session</td>
+    </tr>
+    <tr>
+      <td class="tg-cx2f">09:30 am</td>
+      <td class="tg-cx2f">Opening Remarks</td>
+    </tr>
+    <tr>
+      <td class="tg-gyuj">09:45 am</td>
+      <td class="tg-gyuj"><span style="font-weight:400;font-style:normal">Keynote 1 : </span>Dr. Meena S.M</td>
+    </tr>
+    <tr>
+      <td class="tg-gyuj">10:15 am</td>
+      <td class="tg-gyuj"><span style="font-weight:bold">Workshop 1</span><br><span style="font-weight:bold">Topic</span> : Datathon enabling Data Science for Social Good<br><span style="font-weight:bold">Speaker</span> : Ms. Srujana Kaddevarmuth</td>
+    </tr>
+    <tr>
+      <td class="tg-nr7j">11:15 am</td>
+      <td class="tg-nr7j">QnA / Discussion</td>
+    </tr>
+    <tr>
+      <td class="tg-lsq3">11:30 am</td>
+      <td class="tg-lsq3">Closing Remarks</td>
+    </tr>
+    </tbody>
+  </table></div>
+
+    <div class="tcolumn">
+  <table class="tg">
+    <colgroup>
+      <col style="width: 103px">
+      <col style="width: 368px">
+    </colgroup>
+    <thead>
+    <tr>
+      <th class="tg-s24f" colspan="2">Day 2</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="tg-ktu8" colspan="2">February 13, 2022</td>
+    </tr>
+    <tr>
+      <td class="tg-548t">Time (IST)</td>
+      <td class="tg-548t">Session</td>
+    </tr>
+    <tr>
+      <td class="tg-cx2f">09:30 am</td>
+      <td class="tg-cx2f">Opening Remarks</td>
+    </tr>
+    <tr>
+      <td class="tg-gyuj">09:45 am</td>
+      <td class="tg-gyuj"><span style="font-weight:400;font-style:normal">Keynote 1 : </span>Dr. Meena S.M</td>
+    </tr>
+    <tr>
+      <td class="tg-gyuj">10:15 am</td>
+      <td class="tg-gyuj"><span style="font-weight:bold">Workshop 1</span><br><span style="font-weight:bold">Topic</span> : Datathon enabling Data Science for Social Good<br><span style="font-weight:bold">Speaker</span> : Ms. Srujana Kaddevarmuth</td>
+    </tr>
+    <tr>
+      <td class="tg-nr7j">11:15 am</td>
+      <td class="tg-nr7j">QnA / Discussion</td>
+    </tr>
+    <tr>
+      <td class="tg-lsq3">11:30 am</td>
+      <td class="tg-lsq3">Closing Remarks</td>
+    </tr>
+    </tbody>
+  </table>
+    </div>
+  </div>
+  </div>
+
+  <div class="headings">Patron</div>
+
+  <div class="content">
+    <div class="row">
+      <div class="column" style="flex: 50%; max-width: 400px">
+        <div class="card">
+          <img src="img/vc.jpeg" alt="Dr. Ashok Shettar" style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Dr. Ashok Shettar</b></h4>
+            <p>Vice Chancellor, KLE Technological University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headings">Advisory</div>
+
+  <div class="content">
+    <div class="row">
+      <div class="column" style="flex: 33%;">
+        <div class="card">
+          <img src="img/bld.jpeg" alt="Prof. B. L Desai" style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Prof. B. L Desai</b></h4>
+            <p>Executive Dean, KLE Technological University</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column"  style="flex: 33%;">
+        <div class="card">
+          <img src="img/nca.jpg" alt="Prof. N. C Aaychit" style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Prof. N. C Aaychit</b></h4>
+            <p>Registrar, KLE Technological University</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column"  style="flex: 33%;">
+        <div class="card">
+          <img src="img/UM.jpg" alt="Prof. Uma Mudenagudi" style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Prof. Uma Mudenagudi</b></h4>
+            <p>R&D Dean, KLE Technological University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headings">WiDS Ambassadors</div>
+
+  <div class="content">
+    <div class="row">
+      <div class="column" style="flex: 50%; max-width: 400px">
+        <div class="card">
+          <img src="img/msm.jpg" alt="Dr. Meena S.M" style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Dr. Meena S.M</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="column"  style="flex: 50%; max-width: 400px">
+        <div class="card">
+          <img src="img/SC.jpg" alt="Dr. Sujatha C." style="width:100%; border-radius: 5px">
+          <div class="container">
+            <h4><b>Dr. Sujatha C.</b></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headings">Organizing Committee</div>
+
+  <div class="content">
+    <div class="trow">
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Dr. P. G Sunita Hiremath</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Dr. Shankar Gangisetty</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Dr. Shantala G</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Ms. Padmashree Desai</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Mr. Uday Kulkarni</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Mr. Sunil G</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Ms. Priyadarshini Patil</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Ms. Neha T</b></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 75px"></div>
+</body>
+
+</html>
