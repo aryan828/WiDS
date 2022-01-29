@@ -35,6 +35,22 @@
       width: 30%;
     }
 
+    .imgf {
+      float: left;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+    }
+
+    .imgs {
+      float: left;
+      height: 370px;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+    }
+
     #banner {
       margin-top: 10px;
       height: 250px;
@@ -86,9 +102,15 @@
       justify-content: center;
     }
 
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
     .column {
-      margin: 10px;
-      width: 32%;
+      margin: 7px;
+      float: left;
     }
 
     .card {
@@ -103,6 +125,8 @@
 
     .container {
       padding: 2px 16px;
+
+      text-align: center;
     }
 
     .container1 {
@@ -112,7 +136,9 @@
 
     .name {
       float: left;
-      width: 24%;
+      width: 35%;
+      margin-left: 20px;
+      margin-right: 20px;
       padding: 5px;
     }
 
@@ -207,12 +233,11 @@
   <div class="content but"><button onclick="location.href='https://www.widsconference.org/'" type="button" style="margin-top: 0">About WiDS Global</button></div>
 
   <div class="headings">Speakers</div>
-
   <div class="content">
     <div class="row">
       <div class="column">
         <div class="card">
-          <img src="img/1520363154001.jpeg" alt="Ms. Srujana Kaddevarmuth" style="width:100%; border-radius: 5px">
+          <img src="img/1520363154001.jpeg" alt="Ms. Srujana Kaddevarmuth" class="imgs">
           <div class="container">
             <h4><b>Ms. Srujana Kaddevarmuth</b></h4>
             <p>Senior Director, Walmart Global Technology</p>
@@ -222,7 +247,7 @@
 
       <div class="column">
         <div class="card">
-          <img src="img/1605122404671.jpeg" alt="Ms. Usha Rengaraju" style="width:100%; border-radius: 5px">
+          <img src="img/1605122404671.jpeg" alt="Ms. Usha Rengaraju" class="imgs">
           <div class="container">
             <h4><b>Ms. Usha Rengaraju</b></h4>
             <p>Principal Data Scientist, MUST Research</p>
@@ -296,23 +321,23 @@
       <td class="tg-548t">Session</td>
     </tr>
     <tr>
-      <td class="tg-cx2f">09:30 am</td>
+      <td class="tg-cx2f">03:30 am</td>
       <td class="tg-cx2f">Opening Remarks</td>
     </tr>
     <tr>
-      <td class="tg-gyuj">09:45 am</td>
-      <td class="tg-gyuj"><span style="font-weight:400;font-style:normal">Keynote 1 : </span>Dr. Meena S.M</td>
+      <td class="tg-gyuj">03:45 am</td>
+      <td class="tg-gyuj"><span style="font-weight:400;font-style:normal">Keynote 2 : </span>Dr. Uma Mudengudi</td>
     </tr>
     <tr>
-      <td class="tg-gyuj">10:15 am</td>
-      <td class="tg-gyuj"><span style="font-weight:bold">Workshop 1</span><br><span style="font-weight:bold">Topic</span> : Datathon enabling Data Science for Social Good<br><span style="font-weight:bold">Speaker</span> : Ms. Srujana Kaddevarmuth</td>
+      <td class="tg-gyuj">04:15 am</td>
+      <td class="tg-gyuj"><span style="font-weight:bold">Workshop 2</span><br><span style="font-weight:bold">Topic</span> : WiDS 2022 Datathon Solution walkthrough<br><span style="font-weight:bold">Speaker</span> : Ms. Usha Rengaraju</td>
     </tr>
     <tr>
-      <td class="tg-nr7j">11:15 am</td>
+      <td class="tg-nr7j">05:15 am</td>
       <td class="tg-nr7j">QnA / Discussion</td>
     </tr>
     <tr>
-      <td class="tg-lsq3">11:30 am</td>
+      <td class="tg-lsq3">05:30 am</td>
       <td class="tg-lsq3">Closing Remarks</td>
     </tr>
     </tbody>
@@ -321,76 +346,83 @@
   </div>
   </div>
 
-  <div class="headings">Patron</div>
-
   <div class="content">
     <div class="row">
-      <div class="column" style="flex: 50%; max-width: 400px">
-        <div class="card">
-          <img src="img/vc.jpeg" alt="Dr. Ashok Shettar" style="width:100%; border-radius: 5px">
-          <div class="container">
-            <h4><b>Dr. Ashok Shettar</b></h4>
-            <p>Vice Chancellor, KLE Technological University</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="headings">Advisory</div>
-
-  <div class="content">
-    <div class="row">
-      <div class="column" style="flex: 33%;">
-        <div class="card">
-          <img src="img/bld.jpeg" alt="Prof. B. L Desai" style="width:100%; border-radius: 5px">
-          <div class="container">
-            <h4><b>Prof. B. L Desai</b></h4>
-            <p>Executive Dean, KLE Technological University</p>
+      <div class="column" style="flex: 15%">
+        <div class="headings">Patron</div>
+        <div class="content">
+          <div class="row">
+            <div class="column" style="flex: 100%">
+              <div class="card">
+                <img src="img/vc.jpeg" alt="Dr. Ashok Shettar" class="imgf">
+                <div class="container">
+                  <h4><b>Dr. Ashok Shettar</b></h4>
+<!--                  <p>Vice Chancellor, KLE Technological University</p>-->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="column"  style="flex: 33%;">
-        <div class="card">
-          <img src="img/nca.jpg" alt="Prof. N. C Aaychit" style="width:100%; border-radius: 5px">
-          <div class="container">
-            <h4><b>Prof. N. C Aaychit</b></h4>
-            <p>Registrar, KLE Technological University</p>
+      <div class="column" style="flex: 45%">
+        <div class="headings">Advisory</div>
+        <div class="content">
+          <div class="row">
+            <div class="column" style="flex: 33%">
+              <div class="card">
+                <img src="img/bld.jpeg" alt="Prof. B. L Desai" class="imgf">
+                <div class="container">
+                  <h4><b>Prof. B. L Desai</b></h4>
+<!--                  <p>Executive Dean, KLE Technological University</p>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="column" style="flex: 33%">
+              <div class="card">
+                <img src="img/nca.jpg" alt="Prof. N. C Aaychit" class="imgf">
+                <div class="container">
+                  <h4><b>Prof. N. C Aaychit</b></h4>
+<!--                  <p>Registrar, KLE Technological University</p>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="column" style="flex: 33%">
+              <div class="card">
+                <img src="img/UM.jpg" alt="Prof. Uma Mudenagudi" class="imgf">
+                <div class="container">
+                  <h4><b>Prof. Uma M</b></h4>
+<!--                  <p>R&D Dean, KLE Technological University</p>-->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="column"  style="flex: 33%;">
-        <div class="card">
-          <img src="img/UM.jpg" alt="Prof. Uma Mudenagudi" style="width:100%; border-radius: 5px">
-          <div class="container">
-            <h4><b>Prof. Uma Mudenagudi</b></h4>
-            <p>R&D Dean, KLE Technological University</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <div class="column" style="flex: 30%">
+        <div class="headings">WiDS Ambassadors</div>
+        <div class="content">
+          <div class="row">
+            <div class="column" style="flex: 50%">
+              <div class="card">
+                <img src="img/msm.jpg" alt="Dr. Meena S.M" class="imgf">
+                <div class="container">
+                  <h4><b>Dr. Meena S.M</b></h4>
+                </div>
+              </div>
+            </div>
 
-  <div class="headings">WiDS Ambassadors</div>
-
-  <div class="content">
-    <div class="row">
-      <div class="column" style="flex: 50%; max-width: 400px">
-        <div class="card">
-          <img src="img/msm.jpg" alt="Dr. Meena S.M" style="width:100%; border-radius: 5px">
-          <div class="container">
-            <h4><b>Dr. Meena S.M</b></h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="column"  style="flex: 50%; max-width: 400px">
-        <div class="card">
-          <img src="img/SC.jpg" alt="Dr. Sujatha C." style="width:100%; border-radius: 5px">
-          <div class="container">
-            <h4><b>Dr. Sujatha C.</b></h4>
+            <div class="column" style="flex: 50%">
+              <div class="card">
+                <img src="img/SC.jpg" alt="Dr. Sujatha C." class="imgf">
+                <div class="container">
+                  <h4><b>Dr. Sujatha C.</b></h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -400,7 +432,7 @@
   <div class="headings">Organizing Committee</div>
 
   <div class="content">
-    <div class="trow">
+    <div class="row">
       <div class="name">
         <div class="card">
           <div class="container1">
@@ -416,7 +448,9 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="row">
       <div class="name">
         <div class="card">
           <div class="container1">
@@ -432,7 +466,27 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="row">
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Ms. Neha T</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="card">
+          <div class="container1">
+            <h4><b>Ms. Priyadarshini Patil</b></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="name">
         <div class="card">
           <div class="container1">
@@ -445,22 +499,6 @@
         <div class="card">
           <div class="container1">
             <h4><b>Mr. Sunil G</b></h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="name">
-        <div class="card">
-          <div class="container1">
-            <h4><b>Ms. Priyadarshini Patil</b></h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="name">
-        <div class="card">
-          <div class="container1">
-            <h4><b>Ms. Neha T</b></h4>
           </div>
         </div>
       </div>
